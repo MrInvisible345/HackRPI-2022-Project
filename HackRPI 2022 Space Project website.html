@@ -4,6 +4,13 @@
         <link rel="stylesheet" href="HackRPI 2022 Space Project css.css">
         <title>Space Stock Analysis</title>
         <h1 class="title">This website will contain predictions for space companies' stocks</h1>
+        
+        <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+        <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+        <py-env>
+            - matplotlib
+        </py-env>
     </head>
 
     <body>
@@ -24,8 +31,10 @@
                 }
                 
             </script>
+            <div id="lineplot"></div>
             
+            <py-script output="lineplot" src = "lineplot.py">
+            </py-script>
         </header>
-
     </body>
 </html>
