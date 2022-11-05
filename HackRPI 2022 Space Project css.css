@@ -1,24 +1,31 @@
 h1.title {
-  color: grey;
+  color: lightgray;
   padding: 5px;
   font-weight: bold;
-  font: Copperplate;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   border-color: white;
 }
 
 
-h1.description{
-  color: grey;
-  font: Brush Script MT;
-  background-color: purple;
-  
+h4.description{
+  margin-top: 2%;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
+body{
+  background: url(https://images.unsplash.com/photo-1465101162946-4377e57745c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3BhY2UlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
+}
+
+input.left{
+  float: left;
 }
 
 button{
   padding: 5px;
   font: Georgia;
-  color: lightblue;
+  color: darkblue;
   border-style: outset;
   border-width: 5px;
+  right: 100%;
 }
