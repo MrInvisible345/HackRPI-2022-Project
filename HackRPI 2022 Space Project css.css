@@ -2,13 +2,23 @@ h1.title {
   color: grey;
   padding: 5px;
   font-weight: bold;
-  background: url(https://as1.ftcdn.net/v2/jpg/03/16/55/02/1000_F_316550206_zCjSYiLsDuFSwJt29NEEHp59D5Cxj0fZ.jpg);
+  font: Copperplate;
+  border-color: white;
 }
 
 
 h1.description{
-  color: blue;
+  color: grey;
+  font: Brush Script MT;
   background-color: purple;
-  background: url(https://www.publicdomainpictures.net/pictures/180000/t2/weltraum-1465833065YL1.jpg);
+  
 
+}
+
+button{
+  padding: 5px;
+  font: Georgia;
+  color: lightblue;
+  border-style: outset
+  border-width: 5px
 }
