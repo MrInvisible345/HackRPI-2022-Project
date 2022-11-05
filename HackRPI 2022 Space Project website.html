@@ -17,15 +17,32 @@
                 <input type="submit" value="Click here" class="left" onclick = "clickButton()">
             </div>
             
-            <script>
-                function clickButton(){
-                    var num = document.getElementById("text_input").value;
-                    document.write(num);
-                }
-                
-            </script>
-            
         </header>
+
+
+        <script>
+            let objects = [];
+            
+            const addData = (ev)=>{
+                ev.preventDefault();
+                let object = {
+                    number: document.getElementById('number').value
+                }
+            
+            objects.push(object);
+            document.forms[0].reset();
+
+            console.warn('added', {objects});
+            let pre = document.querySelector("#msg pre")
+            pre.textContent = '\n' + JSON.stringify(objects, '\t', 2)
+
+            }
+
+
+            document.addEventListener('DOMContentLoaded', ()=>{
+                document.getElementById('btn').addEventListener('click', addData);
+            });
+        </script>
 
     </body>
 </html>
