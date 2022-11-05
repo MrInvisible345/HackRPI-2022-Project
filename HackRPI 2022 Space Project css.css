@@ -19,6 +19,6 @@ button{
   padding: 5px;
   font: Georgia;
   color: lightblue;
-  border-style: outset
-  border-width: 5px
+  border-style: outset;
+  border-width: 5px;
 }
