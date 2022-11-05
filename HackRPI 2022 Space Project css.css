@@ -1,4 +1,4 @@
-title{
+h1.title {
   color: grey;
   padding: 5px;
   font-weight: bold;
@@ -6,7 +6,7 @@ title{
 }
 
 
-h1{
+h1.description{
   color: blue;
   background-color: purple;
   background: url(https://www.publicdomainpictures.net/pictures/180000/t2/weltraum-1465833065YL1.jpg);
