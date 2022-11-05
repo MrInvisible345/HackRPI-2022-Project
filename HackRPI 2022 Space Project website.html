@@ -12,19 +12,38 @@
                 Want to know if investing in stocks that are space-related is a good idea? Click the button below, and by seeing weather or not the public seem to be 
                 interested in the possibilities of space, we will let you know if it a intelligent idea to invest in space-related stocks.
             </h4>
-            <div>
-                <input id = "text_input" type="text"class="left" placeholder='Number of months in the future year'size="50">
-                <input type="submit" value="Click here" class="left" onclick = "clickButton()">
-            </div>
-            
-            <script>
-                function clickButton(){
-                    var num = parseInt(document.getElementById("text_input").value);
-                }
-                document.write("Hello" + num.toString());
-            </script>
-            
+            <form name = "user_form">
+                <div>
+                    <input type="text"class="left" id="number" placeholder='Number of months in the future year'size="50">
+                    <input type="submit" value="Click here" id='btn' class="left" onclick = "return clickButton()">
+                </div>
+            </form>
         </header>
+
+
+        <script>
+            let objects = [];
+            
+            const addData = (ev)=>{
+                ev.preventDefault();
+                let object = {
+                    number: document.getElementById('number').value
+                }
+            
+            objects.push(object);
+            document.forms[0].reset();
+
+            console.warn('added', {objects});
+            let pre = document.querySelector("#msg pre")
+            pre.textContent = '\n' + JSON.stringify(objects, '\t', 2)
+
+            }
+
+
+            document.addEventListener('DOMContentLoaded', ()=>{
+                document.getElementById('btn').addEventListener('click', addData);
+            });
+        </script>
 
     </body>
 </html>
